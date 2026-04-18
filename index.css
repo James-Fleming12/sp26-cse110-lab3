@@ -1,0 +1,170 @@
+/* Nice Comment */
+:root {
+    --bg: #f8fafc;
+    --accent: #2d4e83;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg, var(--white));
+    line-height: 1.5;
+    padding: 2vh; 
+    overflow-x: hidden; 
+    word-wrap: break-word;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    background-color: aliceblue;
+    padding: 30px; 
+    border-bottom: 3pt solid var(--accent);
+    margin-bottom: 1cm;
+    text-align: center;
+}
+
+header > h1 {
+    color: color-mix(in srgb, var(--accent), blue 30%);
+}
+
+nav a, footer p {
+    display: inline-block;
+    color: hsla(210, 100%, 40%, 1); 
+    text-decoration: none;
+}
+
+nav a:hover { text-decoration: underline; }
+nav a:active { color: orange; }
+
+section {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ccc;
+    width: 80%;
+}
+
+#attendance li {
+    flex: 1 1 22%; 
+    
+    max-width: 200px; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    min-height: 80px;
+}
+
+#attendance ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin: 20px auto;
+    justify-content: center; 
+}
+
+main {
+    display: block; 
+}
+
+main section h2 { 
+    color: #2c3e50; 
+}
+
+ul + p { 
+    margin-top: 10px; 
+}
+
+footer {
+    position: static;
+}
+
+section ~ footer { 
+    font-size: 0.8rem; 
+}
+
+section:has(input[required]) {
+    border: 2px solid #3498db;
+}
+
+form {
+    & fieldset {
+        padding: 2rem;
+        & legend { font-weight: bold; }
+    }
+}
+
+#agenda {
+    margin-left: 0.2in;
+    border-left: 5px solid color(display-p3 0.12 0.16 0.23); 
+}
+
+#agenda ol, #business ul, details ul {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+    margin-top: 10px;
+}
+
+.business-list {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+video, audio {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) { /* Responsiveness */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        justify-items: stretch; 
+    }
+    #attendance, #business, #media { 
+        grid-column: 1;
+    }
+    #agenda, #form { 
+        grid-column: 2; 
+    }
+
+    html { 
+        font-size: 115%; 
+    }
+}
+
+@media (min-width: 1200px) {
+    body { padding: 0.5in; }
+}

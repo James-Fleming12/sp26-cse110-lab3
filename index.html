@@ -4,12 +4,21 @@
     <title>CSE110 Meeting Minutes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="site_content/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    
+    <style>
+      footer {
+        border-top: 1px solid #ccc;
+        margin-top: 2rem;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
         <h1>AI Agent First Brainstorm</h1>
-        <h2>Brainstorming, Organization, etc.</h2>
-        <h3>April 11, 2026</h3>
+        <h2 style="font-style: italic;">Brainstorming, Organization, etc.</h2> <h3>April 11, 2026</h3>
 
         <nav>
             <a href="#attendance">Attendance</a> | 
@@ -23,7 +32,7 @@
     <main>
         <section id="attendance">
             <h2>Attendance</h2>
-            <ul>
+            <ul class="attendance-list">
                 <li><span>Susan O'Regan</span></li>
                 <li><span>Grahame Webber</span></li>
                 <li><span>Ken Morris</span></li>
@@ -33,30 +42,33 @@
                 <li><span>Clare St Pierre</span></li>
                 <li><span>Liz Stolwyk</span></li>
             </ul>
-            The following members were <em>sick</em>, wish them a <strong>swift</strong> recover!
+            <p>The following members were <em>sick</em>, wish them a <strong>swift</strong> recover!</p>
             <ul>
                 <li><div>Oliver George</div></li>
             </ul>
         </section>
+
         <section id="agenda">
             <h2>Agenda</h2>
-            <p>Creating the idea for the AI Agent so we can start implementing it starting next week. Also finalizing any leftover business decisions.</p>
+            <p>Creating the idea for the AI Agent so we can start implementing it starting next week.</p>
             <ol>
                 <li>Determine Company Organizational Principles</li>
                 <li>Brainstorm AI Agent Project</li>
             </ol>
         </section>
+
         <section id="business">
-        <h2>Business Items</h2>
-        Left Unfinished from Last Meeting:
-        <ul>
-            <li>Company Branding</li>
-        </ul>
-        New Business Items:
-        <ul>
-            <li>Potential Sponsorship Deal from <i>NETA</i></li>
-        </ul>
+          <h2>Business Items</h2>
+          <p>Left Unfinished from Last Meeting:</p>
+          <ul class="business-list">
+              <li>Company Branding</li>
+          </ul>
+          <p>New Business Items:</p>
+          <ul>
+              <li>Potential Sponsorship Deal from <i>NETA</i></li>
+          </ul>
         </section>
+
         <details>
             <summary>Comments/Questions for Next Meeting</summary>
             <ul>
@@ -64,6 +76,7 @@
                 <li>How are we going to generate <strong>revenue</strong>? (Main Detail for Next Meeting)</li>
             </ul>
         </details>
+
         <section id="media">
             <h2>Current Plan and Meeting Recording</h2>
             <img src="site_content/image.png" alt="AI Agent Architecture">
@@ -72,48 +85,26 @@
             <hr>
             <video controls src="site_content/meeting_vid.mp4"></video>
         </section>
+
         <section id="form">
             <h2>Sample Form</h2>
             <form>
                 <fieldset>
                     <legend>Attendance Confirmation</legend>
-                    
                     <label for="name">Name</label>
                     <input type="text" id="name" required><br><br>
-
                     <label for="m-date">Date</label>
                     <input type="date" id="m-date"><br><br>
-
                     <p>Will you be able to come to the next meeting?</p>
                     <input type="radio" id="yes" name="attendance" value="yes">
                     <label for="yes">Yes</label>
                     <input type="radio" id="no" name="attendance" value="no">
                     <label for="no">No</label><br><br>
-
                     <input type="checkbox" id="subscribe">
                     <label for="subscribe">Will you not be able to come to the meetings regularly?</label><br><br>
-
-                    <label for="role">Role:</label>
-                    <select id="role">
-                        <option>Developer</option>
-                        <option>Project Manager</option>
-                        <option>Designer</option>
-                    </select><br><br>
-
-                    <label for="join">How will you join?</label>
-                    <input list="methods" id="join">
-                    <datalist id="methods">
-                    <option value="In-Person">
-                    <option value="Zoom">
-                    <option value="Google Meet">
-                    </datalist><br><br>
-
-                    <label for="comments">Additional Notes:</label><br>
-                    <textarea id="comments" rows="4" cols="30"></textarea><br><br>
-
                     <button type="button">Submit Notes</button>
                 </fieldset>
-                </form>
+            </form>
         </section>
     </main>
     <footer>

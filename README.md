@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-The website is [here](https://james-fleming12.github.io/Lab2_Starter/)
+The website is [here](https://james-fleming12.github.io/sp26-cse110-lab3/)

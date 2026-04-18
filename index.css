@@ -40,8 +40,12 @@ nav a, footer p {
     text-decoration: none;
 }
 
-nav a:hover { text-decoration: underline; }
-nav a:active { color: orange; }
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:active { 
+    color: orange; 
+}
 
 section {
     border: 1px solid #ddd;
@@ -111,7 +115,9 @@ section:has(input[required]) {
 form {
     & fieldset {
         padding: 2rem;
-        & legend { font-weight: bold; }
+        & legend { 
+            font-weight: bold; 
+        }
     }
 }
 
